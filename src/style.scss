@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+.grand-hotel-regular {
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.formContainer{
+    background-color: #a3b18a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formWrapper{
+        background-color: #dad7cd;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
+        .logo{
+            color: #344E41;
+            font-family: "Grand Hotel", cursive;
+            font-size: 40px;
+        }
+
+        .title{
+            color: black;
+            font-size: 14px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                width: 250px;
+            }
+            input:focus{
+                outline: transparent !important;
+                border: 1px solid #588157;
+                box-shadow: 0 0 10px #344E41;
+            }
+            button{
+                background-color: #3A5A40;
+                color: #DAD7CD;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            label{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: black;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            img{
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        p{
+            color: black;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+    }
+}
+
+.home{
+    background-color: #a3b18a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar{
+            flex: 1;
+            background-color: #3A5A40;
+    
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: #344E41;
+                height: 50px;
+                padding: 10px;
+                justify-content: space-between;
+                color: white;
+    
+                .logo{
+                    font-family: "Grand Hotel", cursive;
+                    font-size: 20px;
+                    padding-right: 20px;
+                }
+    
+                .user{
+                    display: flex;
+                    gap: 10px;
+                    font-size: 12px;
+        
+                    span{
+                        margin-top: 2px;
+                    }
+
+                    img{
+                        background-color: #A3B18A;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+            
+                    button{
+                        background-color: #A3B18A;
+                        color: black;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 12px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            
+            .search{
+                border-bottom: 1px solid gray;
+    
+                .searchForm{
+                    padding: 10px;
+
+                    input{
+                        background-color: #A3B18A;
+                        border-radius: 5px;
+                        border: none;
+                        color: white;
+                        outline-color: #344E41;
+                        padding: 3px;
+                        width: 100vh;
+                    }
+                }
+            }
+    
+            .userChat{
+    
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+    }
+
+
+    .chat{
+        flex: 2;
+    }
+}
