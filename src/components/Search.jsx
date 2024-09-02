@@ -4,8 +4,10 @@ import addimg from '../img/addimg.png'
 const Search = () => {
   return (
     <div className="search">
-        <div className="searchForm">
-            <input type="text" placeholder="Search"/>
+        <div className="search-box">
+            <div className="row-search">
+                <input type="text" id="input-box" placeholder="Search"/>
+            </div>
         </div>
         <div className="userChat">
             <img src={addimg} alt="" />
